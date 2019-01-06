@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Railway Guide</string>
+
+
+    <string name="option1">Search Train</string>
+    <string name="option2">Locate Train</string>
+    <string name="option3">Travel History</string>
+    <string name="option4">Train Info</string>
+    <string name="option5">Profile</string>
+
+
+    <string-array name="division_names">
+        <item> Select Division</item>
+        <item> Rajshahi </item>
+        <item> Dhaka </item>
+        <item> Rangpur </item>
+        <item> Sylhet </item>
+        <item> Mymensingh </item>
+        <item> Khulna </item>
+        <item> Barisal </item>
+        <item> Chittagong </item>
+    </string-array>
+
+    <string-array name="from_names">
+        <item> Select From</item>
+        <item> Chittagong </item>
+        <item> Rajshahi </item>
+        <item> Rangpur </item>
+        <item> Mymensingh </item>
+        <item> Sylhet </item>
+        <item> Khulna </item>
+        <item> Barisal </item>
+        <item> Dhaka </item>
+    </string-array>
+
+
+    <string-array name="to_names">
+        <item> Select Destination</item>
+        <item> Dhaka </item>
+        <item> Rajshahi </item>
+        <item> Barisal </item>
+        <item> Mymensingh </item>
+        <item> Sylhet </item>
+        <item> Khulna </item>
+        <item> Rangpur </item>
+        <item> Chittagong </item>
+    </string-array>
+
+</resources>
