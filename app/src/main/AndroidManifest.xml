@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity" />
+        <activity android:name=".SecondActivity"
+            android:parentActivityName=".NavigationBarActivity" />
         <activity
             android:name=".TrainInfoActivity"
             android:parentActivityName=".SecondActivity" />
@@ -29,7 +30,9 @@
         <activity
             android:name=".TravelHistoryActivity"
             android:parentActivityName=".SecondActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+
+        <activity android:name=".NavigationBarActivity"></activity>
     </application>
 
 </manifest>

@@ -46,4 +46,8 @@
         <item> Chittagong </item>
     </string-array>
 
+
+    <string name="Open">Railway Guide</string>
+    <string name="Close">Railway Guide</string>
+
 </resources>

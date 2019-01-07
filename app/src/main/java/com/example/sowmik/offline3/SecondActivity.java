@@ -17,6 +17,11 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+
+
         SearchTrainCardView = findViewById(R.id.searchtrainid);
         LocateTrainCardView = findViewById(R.id.locatetrainid);
         TravelHistoryCardView = findViewById(R.id.travelhistoryid);

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    android:orientation="vertical"
+    android:id="@+id/drawerlayoutid"
+
+    android:fitsSystemWindows="false"
+    >
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/background_color"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:padding="5dp"
+        android:gravity="center"
+        tools:context=".NavigationBarActivity">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <android.support.v7.widget.CardView
+
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_margin="10dp"
+                android:id="@+id/searchtrainid"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/ic_action_user_search_icon"
+                        android:padding="10dp"
+                        android:background="@drawable/circlebackgroundpurple"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/material_deep_purple"
+                        />
+
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:text="@string/option1"
+                        />
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_margin="10dp"
+                android:id="@+id/locatetrainid"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/ic_action_user_search_location_icon"
+                        android:padding="10dp"
+                        android:background="@drawable/circlebackgroundpink"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/material_pink"
+                        />
+
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:text="@string/option2"
+                        />
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+        <!--2nd Linear layout-->
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <android.support.v7.widget.CardView
+
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_margin="10dp"
+                android:id="@+id/travelhistoryid"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/ic_action_user_history_icon"
+                        android:padding="10dp"
+                        android:background="@drawable/circlebackgroundgreen"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/material_green"
+                        />
+
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:text="@string/option3"
+                        />
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_margin="10dp"
+                android:id="@+id/traininfoid"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/ic_action_user_info_icon"
+                        android:padding="10dp"
+                        android:background="@drawable/circlebackgroundblue"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/material_blue"
+                        />
+
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:text="@string/option4"
+                        />
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_viewid"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/navigation_menu">
+
+
+    </android.support.design.widget.NavigationView>
+
+
+
+</android.support.v4.widget.DrawerLayout>
+

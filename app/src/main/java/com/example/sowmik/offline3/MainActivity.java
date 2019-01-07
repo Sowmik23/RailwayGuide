@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 if(username.equals("admin") && pass.endsWith("1234"))
                 {
 
-                    Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+                    Intent intent = new Intent(MainActivity.this,NavigationBarActivity.class);
                     startActivity(intent);
 
                 }
