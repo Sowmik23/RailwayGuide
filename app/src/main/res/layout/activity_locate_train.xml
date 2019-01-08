@@ -13,17 +13,18 @@
     tools:context=".LocateTrainActivity">
 
     <Button
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+
+        android:background="@drawable/button_shape"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+
 
         android:gravity="center_horizontal|center"
         android:text="Where am I ?"
-        android:id="@+id/where_iid"
+        android:id="@+id/where_am_i_button_id"
 
-        android:textSize="15sp"
-        android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
         />
@@ -57,18 +58,20 @@
         />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
 
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
+        android:background="@drawable/button_shape"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
 
         android:text="Locate Train"
-        android:id="@+id/locate_buttonid"
+        android:id="@+id/locate_train_button_id"
 
-        android:textSize="15sp"
-        android:textStyle="bold"
+        android:gravity="center_horizontal|center"
+
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
         />
 
 

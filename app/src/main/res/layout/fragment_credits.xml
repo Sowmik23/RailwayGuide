@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreditsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/about_us"
+            android:textStyle="italic"
+            />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/sowmik"
+                />
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="@string/details_sowmik"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/safwan"
+                />
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="@string/details_safwan"
+                android:textAlignment="center"
+                android:gravity="left"
+                android:layout_gravity="left"
+                />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/dewan"
+                />
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="@string/details_dewan"
+                android:textAlignment="center"
+                android:gravity="left"
+                android:layout_gravity="left"
+                />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

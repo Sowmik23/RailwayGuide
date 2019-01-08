@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".TrainDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#00F"
+                android:text="Parabat Express"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:text="Train Number :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginLeft="20dp"
+                android:text="From :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginLeft="20dp"
+                android:text="To :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginLeft="20dp"
+                android:text="Departure :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginLeft="20dp"
+                android:text="Arrival :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginLeft="20dp"
+                android:text="Off Day :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:text="Available Seats"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:text="Shovan Chair:"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:text="First Class :"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:text="AC Seat :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:text="AC Berth :"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/date_picker_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="Select Journey Date"
+                android:textAllCaps="false"
+                style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                android:layout_marginBottom="30dp"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

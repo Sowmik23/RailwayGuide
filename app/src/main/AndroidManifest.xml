@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sowmik.offline3">
 
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,7 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity"
+        <activity
+            android:name=".SecondActivity"
             android:parentActivityName=".NavigationBarActivity" />
         <activity
             android:name=".TrainInfoActivity"
@@ -31,8 +35,12 @@
             android:name=".TravelHistoryActivity"
             android:parentActivityName=".SecondActivity" />
         <activity android:name=".MainActivity" />
-
-        <activity android:name=".NavigationBarActivity"></activity>
+        <activity android:name=".NavigationBarActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity
+            android:name=".TrainDetails"
+            android:parentActivityName=".TrainInfoActivity" />
+        <activity android:name=".TrainListActivity"></activity>
     </application>
 
 </manifest>

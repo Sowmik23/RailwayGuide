@@ -2,47 +2,41 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view"
-    >
+    tools:showIn="navigation_view">
 
 
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/homeid"
             android:checked="true"
-            android:title="Home"
             android:icon="@drawable/ic_home_icon"
-            >
-        </item>
+            android:title="Home"></item>
 
         <item
             android:id="@+id/myprofileid"
-            android:title="My Profile"
             android:icon="@drawable/ic_person_profile"
-            >
-        </item>
+            android:title="My Profile"></item>
 
         <item
             android:id="@+id/settingid"
-            android:title="Setting"
             android:icon="@drawable/ic_settings_icon"
-            >
-        </item>
+            android:title="Setting"></item>
 
         <item
             android:id="@+id/helpid"
-            android:title="Help"
             android:icon="@drawable/ic_help_icon"
-            >
-        </item>
+            android:title="Help"></item>
+
+        <item
+            android:id="@+id/creditsid"
+            android:icon="@drawable/ic_people_credits"
+            android:title="About"></item>
 
 
         <item
             android:id="@+id/signoutid"
             android:title="Sign Out"
-            >
-
-        </item>
+            android:icon="@drawable/signout_icon"></item>
 
     </group>
 
@@ -51,30 +45,16 @@
 
             <item
                 android:id="@+id/shareid"
-                android:title="Share"
                 android:icon="@drawable/ic_share_icon"
-                >
-            </item>
+                android:title="Share"></item>
 
             <item
                 android:id="@+id/feedbackid"
-                android:title="Feedback"
                 android:icon="@drawable/ic_feedback_icon"
-                >
-            </item>
-
-            <item
-                android:id="@+id/messageid"
-                android:title="Message"
-                android:icon="@drawable/ic_message_icon"
-                >
-            </item>
-
+                android:title="Feedback"></item>
 
         </menu>
     </item>
-
-
 
 
 </menu>

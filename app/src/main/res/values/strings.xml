@@ -50,4 +50,51 @@
     <string name="Open">Railway Guide</string>
     <string name="Close">Railway Guide</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="details_sowmik">
+        Name: Sree Sowmik Kumar Sarker\nRoll: 54\n
+        23th Batch\n
+    Department of Computer Science and Engineering\nUniversity of Dhaka.</string>
+    <string name="details_safwan">
+        Name: Hossain Md Safwan\nRoll: 34\n
+        23th Batch\n
+    Department of Computer Science and Engineering\nUniversity of Dhaka.</string>
+    <string name="details_dewan">
+        Name: Raihan Dewan Iman\nRoll: 49\n
+        23th Batch\n
+    Department of Computer Science and Engineering\nUniversity of Dhaka.</string>
+
+    <string name="about_us">    This android application is created for our Application lab
+        project in 2nd year 2nd semester.So we decide to make Railway Guide app.
+        This app will provide the information of every lines train information like how many train
+        runs in this route and when travels,what is the seat price of each type(AC,S-Chair).\n\n
+        The user also can set alarm in this app which will remain the user his journey date.\n
+        Me and my another two project partner made this. \n\n\n
+        Details:\n
+    </string>
+
+
+    <string name="help">First of all user need to create an user account by filling necessary data
+        that are wanted. \n\nIn Home navigation bar by Search Train user can find from a district to
+        another districts total number train runs. And can also see each train information such as
+        total number of seats, price of each type of seat in trains and if user want to travel this
+        train in a specific date can set an alarm in this app. Trust me that this app is faithful
+        and in time it will notify the user about his journey.\n\n
+        However, by the locate train user can know where a train is located this time by adding
+        the train number.\n\n
+        This app will also keep the traveling history of the user. So in traveling history user can
+        see his/her traveling history.\n\n
+        And in train info user can search a train and can see the details of the train.
+        \n\n
+        In the profile navigation bar user can see his/her profile and can edit and can add profile picture.
+        also can see his/her travelling history from here.\n
+        In setting user can change some internal function of this application. And user can also send
+        feedback about this app and can share this app.\n
+
+    </string>
+
+
 </resources>
