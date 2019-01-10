@@ -91,6 +91,8 @@ public class NavigationBarActivity extends AppCompatActivity implements Navigati
         {
 
             Toast.makeText(NavigationBarActivity.this, "Setting", Toast.LENGTH_SHORT).show();
+
+
         }
         else if (menuItem.getItemId()==R.id.helpid)
         {
@@ -114,6 +116,10 @@ public class NavigationBarActivity extends AppCompatActivity implements Navigati
         {
 
             Toast.makeText(NavigationBarActivity.this, "Sign Out", Toast.LENGTH_SHORT).show();
+
+            Intent intent = new Intent(NavigationBarActivity.this,WelcomeActivity.class);
+            startActivity(intent);
+
         }
 
 
@@ -147,7 +153,5 @@ public class NavigationBarActivity extends AppCompatActivity implements Navigati
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
-
-
 
 }

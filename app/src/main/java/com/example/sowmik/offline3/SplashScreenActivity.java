@@ -65,7 +65,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     public void startApp()
     {
-        Intent intent = new Intent(SplashScreenActivity.this,NavigationBarActivity.class);
+        Intent intent = new Intent(SplashScreenActivity.this,WelcomeActivity.class);
         startActivity(intent);
         finish();
     }

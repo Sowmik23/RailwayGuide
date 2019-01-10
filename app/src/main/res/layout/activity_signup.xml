@@ -12,6 +12,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
+        android:id="@+id/user_nameid"
         android:hint="User name"
         android:textSize="20sp"
         android:paddingLeft="10dp"
@@ -20,6 +22,7 @@
 
 
     <EditText
+        android:id="@+id/mobile_numberid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Mobile number"
@@ -34,6 +37,7 @@
 
 
     <EditText
+        android:id="@+id/email_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
@@ -44,6 +48,7 @@
         />
 
     <EditText
+        android:id="@+id/address_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Address"
@@ -54,6 +59,7 @@
         />
 
     <EditText
+        android:id="@+id/password_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
@@ -64,13 +70,13 @@
         />
 
     <Button
+        android:id="@+id/sign_up_button_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign Up"
         android:textSize="30sp"
         android:textStyle="bold"
         android:textAllCaps="false"
-
         />
 
 </LinearLayout>

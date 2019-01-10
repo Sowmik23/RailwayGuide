@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context=".WelcomeActivity">
+
+    <LinearLayout
+        android:background="#222dff"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Railway Guide"
+            android:textSize="30sp"
+            android:textColor="#154e03"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:background="@color/material_blue"
+            android:layout_width="200dp"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:gravity="center|bottom"
+                android:layout_weight="1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search_icon"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Search your best train"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_alarm_icon"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Keep alarmed yourself"
+                    android:layout_marginLeft="5dp"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center|top"
+                android:layout_weight="1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_user_search_location_icon"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Know your location"
+                    android:layout_marginLeft="5dp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="#a809f1"
+                android:layout_width="215dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:text="See which train is more comfortable for journey.\n\nJoin today:"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+
+                <Button
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Login"
+                    android:id="@+id/login_button_id"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="50dp"
+                    android:text="Don't have an account?"
+                    android:layout_gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+
+                <Button
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Create Account"
+                    android:id="@+id/create_account_id"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

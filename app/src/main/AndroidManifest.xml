@@ -34,13 +34,23 @@
         <activity
             android:name=".TravelHistoryActivity"
             android:parentActivityName=".SecondActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".NavigationBarActivity" />
-        <activity android:name=".SignupActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:parentActivityName=".WelcomeActivity"/>
+        <activity
+            android:name=".NavigationBarActivity"
+            />
+        <activity
+            android:name=".SignupActivity"
+            android:parentActivityName=".WelcomeActivity"/>
         <activity
             android:name=".TrainDetails"
             android:parentActivityName=".TrainInfoActivity" />
-        <activity android:name=".TrainListActivity"></activity>
+        <activity
+            android:name=".TrainListActivity"
+            />
+        <activity
+            android:name=".WelcomeActivity"></activity>
     </application>
 
 </manifest>
