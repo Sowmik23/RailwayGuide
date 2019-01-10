@@ -56,7 +56,6 @@
             android:padding="10dp"
             android:hint="Enter your Feedback"
 
-            android:textIsSelectable="true"
             android:background="#ffffff"
             android:maxLines="30"
             android:paddingTop="15dp"

@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 public class SignupActivity extends AppCompatActivity {
 
+    UserDetails userDetails;
     UserListDatabase userListDatabase;
 
     private EditText name,email,address,password,mobile_number;
@@ -31,6 +32,7 @@ public class SignupActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
 
+        userDetails = new UserDetails();
         userListDatabase = new UserListDatabase(this);
         SQLiteDatabase sqLiteDatabase = userListDatabase.getWritableDatabase();
 
@@ -56,7 +58,18 @@ public class SignupActivity extends AppCompatActivity {
                 String _mobile_number = mobile_number.getText().toString();
 
 
-                long rowId = userListDatabase.insertData(_name,_email,_address,_password,_mobile_number);
+                userDetails.setName(_name);
+                userDetails.setEmail(_email);
+                userDetails.setAddress(_address);
+                userDetails.setPassword(_password);
+                userDetails.setMobile_number(_mobile_number);
+
+
+
+
+
+                long rowId = userListDatabase.insertData(userDetails);
+
                 
                 if(rowId==-1)
                 {
@@ -112,6 +125,8 @@ public class SignupActivity extends AppCompatActivity {
 
                         }
                     });
+
+
                     AlertDialog alertDialog = alertDialogBuilder.create();
                     alertDialog.show();
 

@@ -132,8 +132,12 @@ public class NavigationBarActivity extends AppCompatActivity implements Navigati
             Intent intent = new Intent(Intent.ACTION_SEND);
 
             intent.setType("text/plain");
-            String subject = "My application lab app";
-            String body = "This app is very useful to buy train ticket in online\n you can also easily locate any train easily by\nthis app.";
+            String subject = "Application name: Railway Guide";
+            String body = "This app is very useful to locate train anytime. Also you can " +
+                    "select your best train for your journey and can also set an alarm " +
+                    "before your journey hour.\n\n" +
+                    "Play Store download link: com.example.sowmik.offline3";
+
             intent.putExtra(Intent.EXTRA_SUBJECT,subject);
             intent.putExtra(Intent.EXTRA_TEXT,body);
             startActivity(intent.createChooser(intent,"share with"));

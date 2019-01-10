@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:text="Name : "
             android:textSize="22sp"
-            android:paddingLeft="10dp"
+            android:paddingLeft="20dp"
             android:textStyle="bold|italic"
             android:layout_marginTop="10dp"
             />
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:text="Mobile : "
             android:textSize="22sp"
-            android:paddingLeft="10dp"
+            android:paddingLeft="20dp"
             android:textStyle="bold|italic"
             android:layout_marginTop="10dp"
             />
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:text="Email : "
             android:textSize="22sp"
-            android:paddingLeft="10dp"
+            android:paddingLeft="20dp"
             android:textStyle="bold|italic"
             android:layout_marginTop="10dp"
             />
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:text="Address :"
             android:textSize="22sp"
-            android:paddingLeft="10dp"
+            android:paddingLeft="20dp"
             android:textStyle="bold|italic"
             android:layout_marginTop="10dp"
             />
@@ -70,10 +70,10 @@
             android:textAllCaps="false"
             android:text="Travel History"
             android:textSize="30sp"
-            android:paddingBottom="20dp"
+            android:paddingBottom="30dp"
             android:paddingTop="20dp"
             android:layout_marginTop="50dp"
-           android:layout_gravity="center"
+            android:layout_gravity="center"
             android:textStyle="bold|italic"
             />
 

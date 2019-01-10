@@ -51,64 +51,32 @@ public class MainActivity extends AppCompatActivity {
 
                 //****************###***************\\
 
-                Cursor cursor = userListDatabase.checkUser(username);
 
-                if (cursor.getCount()==0){
+                Boolean result = userListDatabase.findPassword(username,pass);
 
-                    //there is no data in the Accounts table
-                    //Toast.makeText(MainActivity.this, "Please create an account first.", Toast.LENGTH_SHORT).show();
 
-                    showData("Error","No data found");
-
-                    return;
-                }
-
-                StringBuffer stringBuffer = new StringBuffer();
-                while (cursor.moveToNext())
+                if(result==true)
                 {
-                    stringBuffer.append("User name: "+cursor.getString(0)+"\n");
-                    stringBuffer.append("Email: "+cursor.getString(1)+"\n");
-                    stringBuffer.append("Address: "+cursor.getString(2)+"\n");
-                    stringBuffer.append("Password: "+cursor.getString(3)+"\n");
-                    stringBuffer.append("Mobile Number: "+cursor.getString(4)+"\n\n\n");
+
+                    Intent intent = new Intent(MainActivity.this,NavigationBarActivity.class);
+                    startActivity(intent);
+
                 }
-
-                showData("ResultSet",stringBuffer.toString());
-
-
-//                if(username.equals("admin") && pass.endsWith("1234"))
-//                {
-//
-//                    //Intent intent = new Intent(MainActivity.this,NavigationBarActivity.class);
-//                    //startActivity(intent);
-//
-//                }
-//                else
-//                {
-//                    cnt--;
-//                    textView.setText("Number of attempts remaining: 0"+cnt);
-//                    if (cnt==0)
-//                    {
-//                        loginButton.setEnabled(false);
-//                    }
-//                }
+                else
+                {
+                    Toast.makeText(MainActivity.this, "Invalid username or password.", Toast.LENGTH_SHORT).show();
+                    cnt--;
+                    textView.setText("Number of attempts remaining: 0"+cnt);
+                    if (cnt==0)
+                    {
+                        loginButton.setEnabled(false);
+                    }
+                }
 
             }
         });
 
 
     }
-
-
-    public void showData(String title,String message){
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(title);
-        builder.setMessage(message);
-        builder.setCancelable(true);
-        builder.show();
-
-    }
-
 
 }

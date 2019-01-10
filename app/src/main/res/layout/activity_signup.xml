@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
 
     android:gravity="center"
+    android:layout_gravity="center"
     android:orientation="vertical"
     tools:context=".SignupActivity">
 
@@ -16,8 +17,8 @@
         android:id="@+id/user_nameid"
         android:hint="User name"
         android:textSize="20sp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         />
 
 
@@ -30,8 +31,8 @@
         android:textSize="20sp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         android:inputType="number"
         />
 
@@ -42,8 +43,8 @@
         android:layout_height="wrap_content"
         android:hint="Email"
         android:textSize="20sp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         android:layout_marginBottom="5dp"
         />
 
@@ -53,8 +54,8 @@
         android:layout_height="wrap_content"
         android:hint="Address"
         android:textSize="20sp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         android:layout_marginBottom="5dp"
         />
 
@@ -64,8 +65,8 @@
         android:layout_height="wrap_content"
         android:hint="Password"
         android:textSize="20sp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         android:layout_marginBottom="10dp"
         />
 
