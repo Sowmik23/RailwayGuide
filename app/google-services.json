@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "359948485450",
+    "firebase_url": "https://railwayguide-d75e6.firebaseio.com",
+    "project_id": "railwayguide-d75e6",
+    "storage_bucket": "railwayguide-d75e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359948485450:android:6545ce862b969ce1",
+        "android_client_info": {
+          "package_name": "com.example.sowmik.offline3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359948485450-b0kit4ii5ie3ssoiv2iht2p50k6na2f7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sowmik.offline3",
+            "certificate_hash": "94e3911a7063b01180b4dabc68d20447cfcdc74e"
+          }
+        },
+        {
+          "client_id": "359948485450-e1242ishulpi0op03tf50bk7mvuresno.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeQF_bmreX3_u7DqXj7kzNHxA7SDOwCyY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359948485450-e1242ishulpi0op03tf50bk7mvuresno.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
