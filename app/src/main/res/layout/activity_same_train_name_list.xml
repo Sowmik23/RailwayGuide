@@ -1,10 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:background="@drawable/background"
     tools:context=".SameTrainNameList">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_weight="2.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/trainnameid"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Train Name: "
+                android:textSize="30dp"
+                android:textStyle="italic|bold"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight=".5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/trainlistid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+
+                android:divider="#ff22"
+                android:dividerHeight="2dp"
+                android:listSelector="#1da44f"
+
+                android:textAlignment="center">
+
+            </ListView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

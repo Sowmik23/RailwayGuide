@@ -19,8 +19,8 @@
 
         <item
             android:id="@+id/settingid"
-            android:icon="@drawable/ic_settings_icon"
-            android:title="Setting"></item>
+            android:icon="@drawable/ic_access_alarm_black_24dp"
+            android:title="Set Reminder"></item>
 
         <item
             android:id="@+id/helpid"

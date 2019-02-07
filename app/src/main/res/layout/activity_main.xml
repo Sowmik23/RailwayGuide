@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,72 +7,81 @@
     android:layout_height="match_parent"
 
     android:background="@drawable/background"
-    android:orientation="vertical"
-    android:gravity="center"
+    android:layout_gravity="center_horizontal"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome to Railway Guide"
-        android:layout_marginBottom="60dp"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        />
-
-    <EditText
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="20dp"
-        android:textColor="#FFFFFFFF"
-        android:hint="Username"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:id="@+id/usernameid"
-        android:drawableLeft="@drawable/ic_action_user_name"
-        />
-    <EditText
-        android:inputType="textPassword"
+        android:layout_height="match_parent">
 
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Railway Guide"
+            android:layout_marginBottom="60dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            />
 
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="20dp"
-        android:textColor="#FFFFFFFF"
-        android:hint="Password"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:id="@+id/passwordid"
-        android:drawableLeft="@drawable/ic_action_user_password"
-        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-    <Button
-        android:id="@+id/loginbuttonid"
-        android:layout_width="180dp"
-        android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#FFFFFFFF"
+            android:hint="Username"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/usernameid"
+            android:drawableLeft="@drawable/ic_action_user_name"
+            />
+        <EditText
+            android:inputType="textPassword"
 
-        android:background="@drawable/button_shape"
-        android:text="Login"
-        android:textColor="#ffffff"
-        android:textSize="20sp"
-        />
 
-    <TextView
-        android:id="@+id/textViewid"
-        android:paddingTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-        android:text="Number of incorrect attempts: "
-        android:textColor="#ffffff"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        />
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#FFFFFFFF"
+            android:hint="Password"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/passwordid"
+            android:drawableLeft="@drawable/ic_action_user_password"
+            />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/loginbuttonid"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+
+            android:background="@drawable/button_shape"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/textViewid"
+            android:paddingTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Number of incorrect attempts: "
+            android:textColor="#ffffff"
+            android:fontFamily="cursive"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</ScrollView>

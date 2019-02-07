@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="@drawable/railway_home_screen"
+    android:background="@mipmap/screen"
     android:gravity="bottom|center"
     tools:context=".SplashScreenActivity">
 

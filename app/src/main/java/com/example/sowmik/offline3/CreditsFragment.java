@@ -18,8 +18,6 @@ public class CreditsFragment extends Fragment {
         // Inflate the layout for this fragment
 
 
-
-
         return inflater.inflate(R.layout.fragment_credits, container, false);
     }
 

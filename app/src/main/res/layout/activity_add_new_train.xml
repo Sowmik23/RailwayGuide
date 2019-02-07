@@ -1,10 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+
+    android:paddingTop="30dp"
+
+    android:background="@drawable/background"
+    android:orientation="vertical"
     tools:context=".AddNewTrain">
 
-</android.support.constraint.ConstraintLayout>
+
+
+    <EditText
+        android:textColorHint="#931324"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Train name"
+        android:id="@+id/train_nameid"
+        />
+    <EditText
+        android:textColorHint="#931324"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Train no"
+        android:id="@+id/train_noid"
+        />
+    <EditText
+        android:textColorHint="#931324"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Offday"
+        android:id="@+id/offdayid"
+        />
+    <EditText
+        android:textColorHint="#931324"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Departure station"
+        android:id="@+id/departurestationid"
+        />
+    <EditText
+        android:textColorHint="#931324"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Departure time"
+        android:id="@+id/departuretimeid"
+        />
+    <EditText
+        android:textColorHint="#931324"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Arrival station"
+        android:id="@+id/arrivalstationid"
+        />
+    <EditText
+        android:textColorHint="#931324"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Arrival time"
+        android:id="@+id/arrivaltimeid"
+        />
+
+
+    <Button
+        android:background="@drawable/button_shape"
+        android:layout_marginTop="20dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:text="Insert"
+        android:id="@+id/insertbuttonid"
+        android:textSize="20sp"
+        />
+
+    <!--<Button-->
+        <!--android:background="@drawable/button_shape"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:layout_width="140dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="Display"-->
+        <!--android:id="@+id/displaydataid"-->
+        <!--/>-->
+
+
+
+</LinearLayout>

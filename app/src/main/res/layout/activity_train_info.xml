@@ -6,15 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
+    android:background="@drawable/background"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".TrainInfoActivity">
 
-    <EditText
+
+    <AutoCompleteTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:hint="Enter Train Name"
+        android:textColorHint="#931324"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
         android:id="@+id/train_nameId"
@@ -31,8 +34,9 @@
         android:layout_height="wrap_content"
 
         android:text="Search"
+        android:textAllCaps="false"
         android:id="@+id/search_button1id"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="20dp"
@@ -43,26 +47,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        android:layout_marginTop="15dp"
         android:text="OR"
         android:textStyle="bold"
         android:textSize="30sp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="15dp"
         />
 
 
-    <EditText
+    <AutoCompleteTextView
+        android:id="@+id/train_numberId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
 
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter Train Number"
+        android:inputType="number"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
-        android:hint="Enter Train Number"
-        android:id="@+id/train_numberId"
-        android:layout_marginBottom="20dp"
-        android:inputType="number"
-        />
+        android:textColorHint="#931324" />
 
     <Button
         android:paddingLeft="20dp"
@@ -76,8 +81,9 @@
         android:background="@drawable/button_shape"
 
         android:text="Search"
+        android:textAllCaps="false"
         android:id="@+id/search_button2id"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         />

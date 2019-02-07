@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class WelcomeActivity extends AppCompatActivity {
 
@@ -38,4 +39,21 @@ public class WelcomeActivity extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public void onBackPressed() {
+
+
+        Toast.makeText(this, "onBackPressed button is called.", Toast.LENGTH_SHORT).show();
+        //super.onBackPressed();
+
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+        finish();
+        System.exit(0);
+
+    }
+
 }

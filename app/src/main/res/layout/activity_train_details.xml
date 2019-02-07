@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,132 +7,173 @@
 
     tools:context=".TrainDetails">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
-            android:layout_gravity="center"
-            android:gravity="start"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/background">
 
 
             <TextView
+                android:id="@+id/t_nameid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="35sp"
+                android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:layout_gravity="center"
-                android:textStyle="bold"
-                android:textColor="#00F"
-                android:text="Parabat Express"/>
+                android:text="Parabat Express"
+                android:textColor="#ec0951"
+                android:textSize="35sp"
+
+                android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/t_noid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:paddingLeft="20dp"
                 android:layout_marginTop="50dp"
-                android:text="Train Number :"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="25sp"
                 android:paddingLeft="20dp"
-                android:text="From :"/>
+                android:text="Train Number :"
+
+                android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/departure_id"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
                 android:paddingLeft="20dp"
-                android:text="To :"/>
+                android:text="Departure :"
+
+                android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/departure_timeid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
                 android:paddingLeft="20dp"
-                android:text="Departure :"/>
+                android:text="Departure time :"
+
+                android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/arrival_id"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
                 android:paddingLeft="20dp"
-                android:text="Arrival :"/>
+                android:text="Arrival :"
+
+                android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/arrival_timeid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
                 android:paddingLeft="20dp"
-                android:text="Off Day :"/>
+                android:text="Arrival time :"
+
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/offday_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Off Day :"
+
+
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:id="@+id/substationid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="sub_stations:"
+                android:textSize="30sp" />
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
                 android:layout_marginTop="20dp"
-                android:textStyle="bold"
                 android:paddingLeft="20dp"
-                android:text="Available Seats"/>
+
+                android:id="@+id/ifavaliableid"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
                 android:paddingLeft="20dp"
-                android:text="Shovan Chair:"/>
+
+                android:id="@+id/shovonchairid"
+                android:textSize="30sp" />
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:paddingLeft="20dp"
-                android:text="First Class :"/>
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:paddingLeft="20dp"
-                android:text="AC Seat :"/>
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:text="AC Seat :"-->
+                <!--android:textSize="30sp" />-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:paddingLeft="20dp"
-                android:text="AC Berth :"
-                android:layout_marginBottom="20dp"/>
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:text="AC Berth :"-->
+                <!--android:textSize="30sp" />-->
+
 
             <Button
                 android:id="@+id/date_picker_id"
+                style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:paddingLeft="20dp"
-                android:layout_marginTop="10dp"
                 android:layout_gravity="center"
-                android:text="Select Journey Date"
-                android:textAllCaps="false"
-                style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="30dp"
+                android:paddingLeft="20dp"
+                android:text="Select Journey Date"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="20dp"
+                android:text="To purchase ticket"
+                android:textColor="#7b0505"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/purchaseticketbuttonid"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="20dp"
+                android:text="Click here"
+                android:textAllCaps="false"
+                android:textColor="#ff22" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
                 />
 
-
-        </LinearLayout>
-
-
-    </ScrollView>
+    </LinearLayout>
 
 
-</LinearLayout>
+</ScrollView>

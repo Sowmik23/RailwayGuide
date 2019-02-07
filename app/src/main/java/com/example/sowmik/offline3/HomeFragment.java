@@ -18,6 +18,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     private CardView SearchTrainCardView,LocateTrainCardView,TravelHistoryCardView,TrainInfoCardView;
 
 
+    String u_name,u_pass;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -25,6 +27,13 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         // Inflate the layout for this fragment
 
         view = inflater.inflate(R.layout.fragment_home, container, false);
+
+
+        Bundle bundle = getArguments();
+
+        u_name = bundle.getString("name");
+        u_pass = bundle.getString("pass");
+
 
         SearchTrainCardView = view.findViewById(R.id.searchtrainid);
         LocateTrainCardView = view.findViewById(R.id.locatetrainid);
@@ -48,6 +57,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             Toast.makeText(getActivity(), "Search Train", Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(getActivity(),SearchTrainActivity.class);
+            intent.putExtra("name",u_name);
+
             startActivity(intent);
 
         }
@@ -64,6 +75,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             Toast.makeText(getActivity(), "Travel History", Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(getActivity(),TravelHistoryActivity.class);
+            intent.putExtra("name",u_name);
+
             startActivity(intent);
 
         }
@@ -72,6 +85,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             Toast.makeText(getActivity(), "Train Info", Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(getActivity(),TrainInfoActivity.class);
+            intent.putExtra("name",u_name);
+
             startActivity(intent);
 
         }

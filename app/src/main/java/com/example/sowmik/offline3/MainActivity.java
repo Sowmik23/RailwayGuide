@@ -48,35 +48,53 @@ public class MainActivity extends AppCompatActivity {
                 String username = userName.getText().toString();
                 String pass = password.getText().toString();
 
+                if (username.isEmpty()) {
 
-                //****************###***************\\
-
-
-                Boolean result = userListDatabase.findPassword(username,pass);
-
-
-                if(result==true)
-                {
-
-                    Intent intent = new Intent(MainActivity.this,NavigationBarActivity.class);
-                    startActivity(intent);
+                    showError(userName, R.string.login1);
 
                 }
-                else
-                {
-                    Toast.makeText(MainActivity.this, "Invalid username or password.", Toast.LENGTH_SHORT).show();
-                    cnt--;
-                    textView.setText("Number of attempts remaining: 0"+cnt);
-                    if (cnt==0)
-                    {
-                        loginButton.setEnabled(false);
+                if (pass.isEmpty()) {
+
+                    showError(password, R.string.login2);
+
+                }
+                else {
+
+                    Boolean result = userListDatabase.findPassword(username, pass);
+
+                    if (result == true) {
+
+                        Intent intent = new Intent(MainActivity.this, NavigationBarActivity.class);
+
+                        intent.putExtra("u_name",""+username);
+                        intent.putExtra("u_password",""+pass);
+
+                        startActivity(intent);
+
+                    } else {
+
+                        showError(userName, R.string.login3);
+                        showError(password, R.string.login3);
+
+                        Toast.makeText(MainActivity.this, "Invalid username or password.", Toast.LENGTH_SHORT).show();
+                        cnt--;
+                        textView.setText("Number of attempts remaining: 0" + cnt);
+                        if (cnt == 0) {
+                            loginButton.setEnabled(false);
+                        }
                     }
                 }
 
             }
         });
 
-
     }
+
+
+    private void showError(EditText field, int messageRes) {
+
+        field.setError(getString(messageRes));
+    }
+
 
 }

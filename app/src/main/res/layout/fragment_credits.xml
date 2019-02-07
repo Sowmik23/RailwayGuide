@@ -3,11 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:background="@drawable/background"
     tools:context=".CreditsFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
     <ScrollView
+        android:layout_marginTop="10dp"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -17,6 +21,8 @@
         android:layout_height="match_parent"
 
         android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         >
 
         <TextView
@@ -24,13 +30,15 @@
             android:layout_height="match_parent"
             android:text="@string/about_us"
             android:textStyle="italic"
+
+            android:fontFamily="serif"
             />
 
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:src="@drawable/sowmik"
+                android:src="@drawable/sowmik_sarker"
                 />
 
             <TextView

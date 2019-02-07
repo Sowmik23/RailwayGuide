@@ -7,16 +7,32 @@
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
+
+        android:background="@drawable/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
 
-        <TextView
+        <ScrollView
+            android:layout_marginTop="15dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="match_parent">
 
-            android:text="@string/help"
-            />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:textColor="#050505"
+                android:fontFamily="serif"
+                android:textSize="20sp"
+                android:text="@string/help"
+                />
+
+        </ScrollView>
+
 
 
     </LinearLayout>

@@ -9,14 +9,18 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.support.annotation.Nullable;
 import android.widget.Toast;
 
+import java.sql.SQLOutput;
+
 public class UserListDatabase extends SQLiteOpenHelper {
 
 
+    String user_Sowmik ;
+
     private Context context;
 
-    private static final String DATABASE_NAME = " userdetails.db ";
-    private static final String TABLE_NAME = " user_details ";
-    private static final int VERSION_NUMBER = 2;
+    private static final String DATABASE_NAME = "userdetails.db";
+    private static final String TABLE_NAME = "user_details";
+    private static final int VERSION_NUMBER = 4;
 
     private static final String ID = "id";
     private static final String USER_NAME = "name";
@@ -24,13 +28,28 @@ public class UserListDatabase extends SQLiteOpenHelper {
     private static final String ADDRESS = "address";
     private static final String PASSWORD = "password";
     private static final String MOBILE_NUMBER = "mobile_number";
-    //private static final String travel_history;
 
     private static final String CREATE_TABLE = " CREATE TABLE " + TABLE_NAME + " (" + ID + " INTEGER PRIMARY KEY AUTOINCREMENT ," + USER_NAME + " VARCHAR(50) NOT NULL , " + EMAIL + " TEXT NOT NULL ,"+ADDRESS+" TEXT NOT NULL ," + PASSWORD + " TEXT NOT NULL ," + MOBILE_NUMBER + " TEXT NOT NULL )";
 
 
     private static final String DROP_TABLE = " DROP TABLE IF EXISTS " + TABLE_NAME;
     private static final String SELECT_ALL = " SELECT * FROM " + TABLE_NAME;
+
+
+
+
+
+    private static final String HISTORY_TABLE_NAME = "user_history";
+
+    private static final String HISTORY_ID = "history_id";
+    private static final String NAME = "user_name";
+    private static final String DEPARTURE = "departure";
+    private static final String ARRIVAL = "arrival";
+    private static final String JOURNEY_DATE = "j_date";
+
+    private static final String CREATE_HISTORY_TABLE = " CREATE TABLE " + HISTORY_TABLE_NAME + " (" + HISTORY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT ," + NAME + " VARCHAR(50) , " + DEPARTURE + " TEXT ,"+ARRIVAL+" TEXT," + JOURNEY_DATE + " TEXT)";
+    private static final String DROP_HISTORY_TABLE = " DROP TABLE IF EXISTS " + HISTORY_TABLE_NAME;
+
 
 
 
@@ -43,6 +62,7 @@ public class UserListDatabase extends SQLiteOpenHelper {
 
     }
 
+
     @Override
     public void onCreate(SQLiteDatabase db) {
 
@@ -50,6 +70,8 @@ public class UserListDatabase extends SQLiteOpenHelper {
 
             Toast.makeText(context, "onCreate is called.", Toast.LENGTH_SHORT).show();
             db.execSQL(CREATE_TABLE);
+            db.execSQL(CREATE_HISTORY_TABLE);
+
 
         }catch (Exception e){
             Toast.makeText(context, "Exception: "+e, Toast.LENGTH_SHORT).show();
@@ -66,6 +88,7 @@ public class UserListDatabase extends SQLiteOpenHelper {
 
             Toast.makeText(context, "onUpgrade is called.", Toast.LENGTH_SHORT).show();
             db.execSQL(DROP_TABLE);
+            db.execSQL(DROP_HISTORY_TABLE);
             onCreate(db);
 
         }catch (Exception e){
@@ -111,6 +134,7 @@ public class UserListDatabase extends SQLiteOpenHelper {
 
                 if (username.equals(uname) && password.equals(pas)){
 
+                    this.user_Sowmik = uname;
                     result = true;
                     break;
                 }
@@ -120,6 +144,52 @@ public class UserListDatabase extends SQLiteOpenHelper {
 
         return result;
     }
+
+
+    public Cursor userProfile(String uname,String pas){
+
+
+        final String str1 = uname;
+        final String str2 = pas;
+
+        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery(" SELECT * FROM " + TABLE_NAME + " WHERE ( " + USER_NAME + " = '" + str1 + "' AND " + PASSWORD + " = '" + str2 + "' )  ",null);
+
+        return cursor;
+    }
+
+
+    public long insertUserTravelHistory(String name,String dep, String arr,String j_date){
+
+
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        String u_name = this.user_Sowmik;
+
+        contentValues.put(NAME,name);
+        contentValues.put(DEPARTURE,dep);
+        contentValues.put(ARRIVAL,arr);
+        contentValues.put(JOURNEY_DATE,j_date);
+
+        long rowId = sqLiteDatabase.insert(HISTORY_TABLE_NAME ,null,contentValues);
+        return rowId;
+
+    }
+
+
+    public Cursor SearchUserHistory(final String u_name){
+
+        final String str1 = u_name;
+
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery(" SELECT * FROM " + HISTORY_TABLE_NAME + " WHERE  ( " + NAME + " = '"+str1+"' ) ",null);
+
+        return cursor;
+
+    }
+
+
 
 
 }

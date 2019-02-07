@@ -10,6 +10,7 @@
     android:gravity="center|top"
     android:weightSum="3"
 
+    android:background="@drawable/background"
     android:orientation="vertical"
     tools:context=".SearchTrainActivity">
 
@@ -18,16 +19,17 @@
         android:layout_gravity="center"
         android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="180dp">
 
         <TextView
             android:layout_marginTop="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Search Train"
-            android:textSize="30sp"
+            android:textSize="40sp"
             android:gravity="center_horizontal"
             android:textStyle="bold"
+            android:fontFamily="cursive"
             />
 
     </LinearLayout>
@@ -39,18 +41,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Spinner
-            android:id="@+id/divisionspinnerid"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-        </Spinner>
 
         <Spinner
-            android:id="@+id/fromspinnerid"
+            android:id="@+id/departurespinnarid"
+
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
 
@@ -60,7 +54,7 @@
         </Spinner>
 
         <Spinner
-            android:id="@+id/tospinnerid"
+            android:id="@+id/arrivalspinnarid"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
 
@@ -71,14 +65,17 @@
 
 
         <Button
+            android:textAllCaps="false"
             android:id="@+id/searchbuttonid"
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
 
             android:layout_marginTop="30dp"
             android:textStyle="bold"
-            android:textSize="17sp"
+            android:textSize="20sp"
             android:text="Search"
+
+            android:background="@drawable/button_shape"
             />
 
     </LinearLayout>

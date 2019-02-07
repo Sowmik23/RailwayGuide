@@ -23,6 +23,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
+
         setContentView(R.layout.activity_splash_screen);
 
 
@@ -48,7 +49,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     public  void doWork()
     {
 
-        for(progress =20;progress<=100;progress+=20)
+        for(progress =10;progress<=100;progress+=20)
         {
             try {
                 Thread.sleep(1000);

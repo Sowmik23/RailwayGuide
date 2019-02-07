@@ -11,24 +11,25 @@
     android:padding="0dp"
     tools:context=".WelcomeActivity">
 
+    <!--<LinearLayout-->
+        <!--android:background="@color/material_blue"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="80dp">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Railway Guide"-->
+            <!--android:textSize="30sp"-->
+            <!--android:textColor="#154e03"-->
+            <!--/>-->
+
+
+    <!--</LinearLayout>-->
+
     <LinearLayout
-        android:background="@color/material_blue"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="80dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Railway Guide"
-            android:textSize="30sp"
-            android:textColor="#154e03"
-            />
-
-
-    </LinearLayout>
-
-    <LinearLayout
+        android:background="@drawable/background"
         android:weightSum="2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -38,7 +39,7 @@
             android:gravity="center"
             android:weightSum="3"
             android:orientation="vertical"
-            android:background="@drawable/background"
+
 
             android:layout_weight="1"
 
@@ -106,7 +107,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_action_user_search_location_icon"
+                    android:src="@drawable/ic_my_location_icon"
                     />
 
 
@@ -127,11 +128,13 @@
 
 
         <LinearLayout
-            android:background="@drawable/background"
+
             android:paddingRight="0dp"
             android:layout_weight="1"
+
             android:gravity="center"
             android:orientation="vertical"
+
             android:layout_width="0dp"
             android:layout_height="match_parent">
 
@@ -139,9 +142,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-
+                android:layout_gravity="center|top"
+                android:gravity="top|center"
                 android:text="See which train is more comfortable for journey.\nJoin today:"
-                android:paddingTop="10dp"
+                android:paddingTop="5dp"
                 android:paddingLeft="10dp"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -154,6 +158,8 @@
                 android:layout_height="45dp"
                 android:layout_gravity="center"
                 android:text="Login"
+                android:textSize="20sp"
+                android:textAllCaps="false"
                 android:id="@+id/login_button_id"
                 android:background="@drawable/button_shape"
                 />
@@ -164,22 +170,44 @@
 
                 android:text="Don't have an account?"
                 android:layout_gravity="center"
-                android:paddingTop="10dp"
+
+                android:paddingTop="30dp"
                 android:paddingLeft="10dp"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 />
 
 
+            <!--<Button-->
+                <!--android:layout_marginTop="25dp"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="Create Account"-->
+                <!--android:id="@+id/create_account_id"-->
+                <!--android:background="@drawable/button_shape"-->
+                <!--/>-->
+
             <Button
-                android:layout_marginTop="10dp"
-                android:layout_width="100dp"
-                android:layout_height="45dp"
-                android:layout_gravity="center"
-                android:text="Create Account"
+
+                android:layout_marginTop="30dp"
                 android:id="@+id/create_account_id"
+
+                android:text="Create Account"
+                android:textAllCaps="false"
+                android:textColor="#0A080A"
+                android:textSize="20sp"
+
+                android:layout_width="130dp"
+                android:layout_height="60dp"
                 android:background="@drawable/button_shape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
                 />
+
+
 
         </LinearLayout>
 

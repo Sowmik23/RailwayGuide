@@ -57,84 +57,108 @@ public class SignupActivity extends AppCompatActivity {
                 String _password = password.getText().toString();
                 String _mobile_number = mobile_number.getText().toString();
 
-
-                userDetails.setName(_name);
-                userDetails.setEmail(_email);
-                userDetails.setAddress(_address);
-                userDetails.setPassword(_password);
-                userDetails.setMobile_number(_mobile_number);
-
-
-
-
-
-                long rowId = userListDatabase.insertData(userDetails);
-
-                
-                if(rowId==-1)
+                if (validInput()==true)
                 {
-                    Toast.makeText(SignupActivity.this, "An error occur.", Toast.LENGTH_SHORT).show();
+
+                    userDetails.setName(_name);
+                    userDetails.setEmail(_email);
+                    userDetails.setAddress(_address);
+                    userDetails.setPassword(_password);
+                    userDetails.setMobile_number(_mobile_number);
+
+                    long rowId = userListDatabase.insertData(userDetails);
+
+                    if (rowId == -1) {
+
+                        Toast.makeText(SignupActivity.this, "An error occur.", Toast.LENGTH_SHORT).show();
+
+                    }
+                    else {
+
+                        Toast.makeText(SignupActivity.this, "Data inserted in row " + rowId, Toast.LENGTH_SHORT).show();
+
+                        //*********for showing alert dialog**********\\
+
+
+                        alertDialogBuilder = new AlertDialog.Builder(SignupActivity.this);
+
+                        //for setting title
+                        alertDialogBuilder.setTitle("Successfully account created.");
+
+                        //for setting message
+                        alertDialogBuilder.setMessage("Do you want to log in now ?");
+                        alertDialogBuilder.setCancelable(false);
+
+                        //for setting icon
+                        alertDialogBuilder.setIcon(R.drawable.ic_mood_successful);
+
+
+                        name.setText("");
+                        email.setText("");
+                        address.setText("");
+                        password.setText("");
+                        mobile_number.setText("");
+
+
+                        alertDialogBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                //exit
+                                //finish();
+
+                                //*******for starting new intent********\\
+
+                                Intent intent = new Intent(SignupActivity.this, MainActivity.class);
+                                startActivity(intent);
+
+
+                            }
+                        });
+                        alertDialogBuilder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                //Toast.makeText(MainActivity.this, "No", Toast.LENGTH_SHORT).show();
+                                dialog.cancel();
+                            }
+                        });
+                        alertDialogBuilder.setNeutralButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                Toast.makeText(SignupActivity.this, "Cancel", Toast.LENGTH_SHORT).show();
+
+                            }
+                        });
+
+
+                        AlertDialog alertDialog = alertDialogBuilder.create();
+                        alertDialog.show();
+
+                    }
                 }
-                else{
-
-                    Toast.makeText(SignupActivity.this, "Data inserted in row "+rowId, Toast.LENGTH_SHORT).show();
-
-                    //*********for showing alert dialog**********\\
-
-
-                    alertDialogBuilder = new AlertDialog.Builder(SignupActivity.this);
-
-                    //for setting title
-                    alertDialogBuilder.setTitle("Successfully inserted data");
-
-                    //for setting message
-                    alertDialogBuilder.setMessage("Do you want to log in ?");
-                    alertDialogBuilder.setCancelable(false);
-
-                    //for setting icon
-                    alertDialogBuilder.setIcon(R.drawable.ic_mood_successful);
-
-
-                    alertDialogBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            //exit
-                            //finish();
-
-                            //*******for starting new intent********\\
-
-                            Intent intent = new Intent(SignupActivity.this,MainActivity.class);
-                            startActivity(intent);
-
-
-                        }
-                    });
-                    alertDialogBuilder.setNegativeButton("No", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-
-                            //Toast.makeText(MainActivity.this, "No", Toast.LENGTH_SHORT).show();
-                            dialog.cancel();
-                        }
-                    });
-                    alertDialogBuilder.setNeutralButton("Cancel", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-
-                            Toast.makeText(SignupActivity.this, "Cancel", Toast.LENGTH_SHORT).show();
-
-                        }
-                    });
-
-
-                    AlertDialog alertDialog = alertDialogBuilder.create();
-                    alertDialog.show();
-
-                }
-
             }
         });
 
-
     }
+
+    private boolean validInput() {
+
+        Boolean allInputValid = true;
+        for (EditText input
+                : new EditText[]{name, email, address, password, mobile_number}) {
+            if (input.getText().toString().isEmpty()) {
+
+                allInputValid = false;
+                showError(input, R.string.required);
+            }
+        }
+        return allInputValid;
+    }
+
+
+    private void showError(EditText field, int messageRes) {
+        field.setError(getString(messageRes));
+    }
+
 }

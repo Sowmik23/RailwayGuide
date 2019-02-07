@@ -9,41 +9,200 @@
     <string name="option5">Profile</string>
 
 
-    <string-array name="division_names">
-        <item> Select Division</item>
-        <item> Rajshahi </item>
-        <item> Dhaka </item>
-        <item> Rangpur </item>
-        <item> Sylhet </item>
-        <item> Mymensingh </item>
-        <item> Khulna </item>
-        <item> Barisal </item>
-        <item> Chittagong </item>
-    </string-array>
-
     <string-array name="from_names">
-        <item> Select From</item>
+        <item> Select Departure</item>
+
+        <item> Akhaura </item>
+        <item> Azampur </item>
+        <item> Akkelpur </item>
+
+        <item> B.Baria </item>
+        <item> Birol </item>
+        <item> Bogra </item>
+
+        <item> Bimanbandor </item>
+        <item> Brahmanbaria </item>
+
+        <item> Benapole </item>
+        <item> Birampur </item>
+        <item> BB_East </item>
+        <item> B.B Setu East </item>
+        <item> B.B Setu Purbo </item>
+        <item> Bhairab Bazar </item>
+        <item> Brahmanbaria </item>
+
+        <item> Chandpur </item>
+        <item> Comilla </item>
         <item> Chittagong </item>
-        <item> Rajshahi </item>
-        <item> Rangpur </item>
-        <item> Mymensingh </item>
-        <item> Sylhet </item>
-        <item> Khulna </item>
-        <item> Barisal </item>
+        <item> Chilahati </item>
+        <item> Chapainawabganj </item>
+        <item> Chuadanga </item>
+        <item> Chirirbandar </item>
+
+        <item> Dewangong </item>
         <item> Dhaka </item>
+        <item> Dinajpur </item>
+        <item> Dhaka Cantt. </item>
+        <item> Dewanganj Bazar </item>
+
+        <item> Feni </item>
+
+        <item> Goalondaghat </item>
+        <item> Goalonda hat </item>
+        <item> Gaforgaon </item>
+        <item> Gaibandha </item>
+
+        <item> Ishurdi </item>
+        <item> Ishurdi by pass </item>
+
+        <item> Joydebpur </item>
+        <item> Joydevpur </item>
+        <item> Jamalpur </item>
+        <item> Joypurhat </item>
+        <item> Jessore </item>
+
+        <item> Kisoregonj </item>
+        <item> Khulna </item>
+        <item> Kolkata </item>
+        <item> Kulaura </item>
+
+        <item> Lalmonirhat </item>
+        <item> Laksam </item>
+        <item> Laksham </item>
+
+        <item> Mohanganj </item>
+        <item> Mymensingh </item>
+        <item> Mohangonj </item>
+
+        <item> Noakhali </item>
+        <item> N.Gong </item>
+        <item> Narsingdi </item>
+        <item> Natore </item>
+
+        <item> Parbatipur </item>
+        <item> Punchogor </item>
+        <item> Poradha </item>
+        <item> Phulbari </item>
+        <item> Panchbibi </item>
+
+        <item> Rahanpur </item>
+        <item> Rangpur </item>
+        <item> Rajshahi </item>
+
+        <item> Santahar </item>
+        <item> Shantahar </item>
+        <item> Saidpur </item>
+        <item> Sylhet </item>
+        <item> Sirajganj </item>
+        <item> Sirajganj Bazar </item>
+        <item> Saiestaganj </item>
+        <item> Srimangal </item>
+
+        <item> Tarakandi </item>
+        <item> Tangail </item>
+        <item> Thakurgaon road </item>
+
+        <item> Ullapara </item>
+
     </string-array>
 
 
     <string-array name="to_names">
-        <item> Select Destination</item>
-        <item> Dhaka </item>
-        <item> Rajshahi </item>
-        <item> Barisal </item>
-        <item> Mymensingh </item>
-        <item> Sylhet </item>
-        <item> Khulna </item>
-        <item> Rangpur </item>
+        <item> Select Arrival</item>
+
+        <item> Akhaura </item>
+        <item> Azampur </item>
+        <item> Akkelpur </item>
+
+        <item> B.Baria </item>
+        <item> Birol </item>
+        <item> Bogra </item>
+
+        <item> Bimanbandor </item>
+        <item> Brahmanbaria </item>
+
+        <item> Benapole </item>
+        <item> Birampur </item>
+        <item> BB_East </item>
+        <item> B.B Setu East </item>
+        <item> B.B Setu Purbo </item>
+        <item> Bhairab Bazar </item>
+        <item> Brahmanbaria </item>
+
+        <item> Chandpur </item>
+        <item> Comilla </item>
         <item> Chittagong </item>
+        <item> Chilahati </item>
+        <item> Chapainawabganj </item>
+        <item> Chuadanga </item>
+        <item> Chirirbandar </item>
+
+        <item> Dewangong </item>
+        <item> Dhaka </item>
+        <item> Dinajpur </item>
+        <item> Dhaka Cantt. </item>
+        <item> Dewanganj Bazar </item>
+
+        <item> Feni </item>
+
+        <item> Goalondaghat </item>
+        <item> Goalonda hat </item>
+        <item> Gaforgaon </item>
+        <item> Gaibandha </item>
+
+        <item> Ishurdi </item>
+        <item> Ishurdi </item>
+        <item> Ishurdi by pass </item>
+
+        <item> Joydebpur </item>
+        <item> Joydevpur </item>
+        <item> Jamalpur </item>
+        <item> Joypurhat </item>
+        <item> Jessore </item>
+
+        <item> Kisoregonj </item>
+        <item> Khulna </item>
+        <item> Kolkata </item>
+        <item> Kulaura </item>
+
+        <item> Lalmonirhat </item>
+        <item> Laksam </item>
+        <item> Laksham </item>
+
+        <item> Mohanganj </item>
+        <item> Mymensingh </item>
+        <item> Mohangonj </item>
+
+        <item> Noakhali </item>
+        <item> N.Gong </item>
+        <item> Narsingdi </item>
+        <item> Natore </item>
+
+        <item> Parbatipur </item>
+        <item> Punchogor </item>
+        <item> Poradha </item>
+        <item> Phulbari </item>
+        <item> Panchbibi </item>
+
+        <item> Rahanpur </item>
+        <item> Rangpur </item>
+        <item> Rajshahi </item>
+
+        <item> Santahar </item>
+        <item> Shantahar </item>
+        <item> Saidpur </item>
+        <item> Sylhet </item>
+        <item> Sirajganj </item>
+        <item> Sirajganj Bazar </item>
+        <item> Saiestaganj </item>
+        <item> Srimangal </item>
+
+        <item> Tarakandi </item>
+        <item> Tangail </item>
+        <item> Thakurgaon road </item>
+
+        <item> Ullapara </item>
+
     </string-array>
 
 
@@ -55,15 +214,15 @@
 
 
     <string name="details_sowmik">
-        Name: Sree Sowmik Kumar Sarker\nRoll: 54\n
+        Name: Sree Sowmik Kumar Sarker\n
         23th Batch\n
     Department of Computer Science and Engineering\nUniversity of Dhaka.</string>
     <string name="details_safwan">
-        Name: Hossain Md Safwan\nRoll: 34\n
+        Name: Hossain Md Safwan\n
         23th Batch\n
     Department of Computer Science and Engineering\nUniversity of Dhaka.</string>
     <string name="details_dewan">
-        Name: Raihan Dewan Iman\nRoll: 49\n
+        Name: Raihan Dewan Iman\n
         23th Batch\n
     Department of Computer Science and Engineering\nUniversity of Dhaka.</string>
 
@@ -96,5 +255,310 @@
 
     </string>
 
+    <string name="required1">Please enter a train name.</string>
+    <string name="required2">Please enter a train no.</string>
+
+
+    <string-array name="train_names">
+
+        <item> Agnibina Express </item>
+        <item> Agnibina Express </item>
+
+        <item> Bharamaputra </item>
+        <item> Barendra Express </item>
+        <item> Balaka Comuter </item>
+        <item> Benapole Commuter </item>
+        <item> Benapol Commuter </item>
+        <item> Burimari Express </item>
+        <item> Bagora Express </item>
+
+        <item> Chittra Express </item>
+        <item> Chittagong mail </item>
+        <item> Chilahati Express</item>
+
+        <item> Dhaka mail </item>
+        <item> Dhaka Express </item>
+        <item> Dhumketue Express </item>
+        <item> Drutojan Express </item>
+        <item> Dolonchapa Express </item>
+        <item> Dewanganj Comuter </item>
+        <item> Dholesssory Express </item>
+        <item> Dinajpur Commuter </item>
+
+        <item> Egarosindhur Provati </item>
+        <item> Egarosindhur Goduli </item>
+        <item> Ekota Express </item>
+
+        <item> Isakhan Express </item>
+
+        <item> Jamalpur Commuter </item>
+        <item> Jalalabad Express </item>
+        <item> Jamuna Express </item>
+        <item> Joyantika Express </item>
+
+        <item> Kalani Express </item>
+        <item> Kapotaskh Express </item>
+        <item> Karnaphuli Express </item>
+        <item> Kanchan Express </item>
+        <item> Kushiara Express </item>
+
+        <item> Lalmoni Express </item>
+        <item> Local </item>
+
+        <item> Madhumati Express </item>
+        <item> Megna Express </item>
+        <item> Moitree Express </item>
+        <item> Mohanagar Goduli </item>
+        <item> Mohanagar Provati </item>
+        <item> Mymensingh Express </item>
+        <item> Mahua Express </item>
+        <item> Mahananda Express </item>
+
+        <item> Noakhali Express </item>
+        <item> Nakshikantha Express </item>
+        <item> Nilsagar </item>
+
+        <item> Padma Express </item>
+        <item> Padmarag Express </item>
+        <item> Parabat Express </item>
+        <item> Paharia Express </item>
+        <item> Perbotipur Commuter </item>
+
+        <item> Rangpur Express</item>
+        <item> Rupsha Express </item>
+        <item> Rajshahi Express </item>
+        <item> Rajshahi Commuter </item>
+        <item> Rocket Express </item>
+
+        <item> Subarna Express</item>
+        <item> Sirajgong Express </item>
+        <item> Sundarban Express </item>
+        <item> Sagardari Express </item>
+        <item> Simanta Express </item>
+        <item> Silk city Express </item>
+        <item> Surma mail </item>
+        <item> Samatat Express </item>
+        <item> Sagarika Express </item>
+
+        <item> Turna Express </item>
+        <item> Tista Express </item>
+        <item> Titumir Express </item>
+        <item> Titas Commuter </item>
+        <item> Turag Express </item>
+
+        <item> Upukol Express </item>
+        <item> Uddayan Express </item>
+        <item> Upaban Express </item>
+        <item> Uttarbanga mail </item>
+        <item> Uttara Express </item>
+
+        <item> Voyal Express </item>
+
+    </string-array>
+
+
+    <string-array name="train_numbers">
+
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+        <item> 8 </item>
+        <item> 9 </item>
+        <item> 10 </item>
+        <item> 11 </item>
+        <item> 12 </item>
+        <item> 13 </item>
+        <item> 14 </item>
+        <item> 15 </item>
+        <item> 16 </item>
+        <item> 17 </item>
+        <item> 18 </item>
+        <item> 19 </item>
+        <item> 20 </item>
+        <item> 21 </item>
+        <item> 22 </item>
+        <item> 23 </item>
+        <item> 24 </item>
+        <item> 25 </item>
+        <item> 26 </item>
+        <item> 27 </item>
+        <item> 28 </item>
+        <item> 29 </item>
+        <item> 30 </item>
+        <item> 31 </item>
+        <item> 32 </item>
+        <item> 33 </item>
+        <item> 34 </item>
+        <item> 35 </item>
+        <item> 36 </item>
+        <item> 37 </item>
+        <item> 38 </item>
+        <item> 39 </item>
+        <item> 40 </item>
+        <item> 41 </item>
+        <item> 42 </item>
+        <item> 43 </item>
+        <item> 44 </item>
+        <item> 45 </item>
+        <item> 46 </item>
+        <item> 47 </item>
+        <item> 48 </item>
+        <item> 49 </item>
+        <item> 50 </item>
+        <item> 51 </item>
+        <item> 52 </item>
+        <item> 53 </item>
+        <item> 54 </item>
+        <item> 55 </item>
+        <item> 56 </item>
+        <item> 57 </item>
+        <item> 58 </item>
+        <item> 59 </item>
+        <item> 60 </item>
+        <item> 61 </item>
+        <item> 62 </item>
+        <item> 63 </item>
+        <item> 64 </item>
+        <item> 65 </item>
+        <item> 66 </item>
+        <item> 67 </item>
+        <item> 68 </item>
+        <item> 69 </item>
+        <item> 70 </item>
+        <item> 72 </item>
+        <item> 73 </item>
+        <item> 74 </item>
+        <item> 75 </item>
+        <item> 76 </item>
+
+        <item> 219 </item>
+        <item> 221 </item>
+        <item> 223 </item>
+        <item> 225 </item>
+        <item> 229 </item>
+        <item> 231 </item>
+        <item> 233 </item>
+        <item> 235 </item>
+        <item> 237 </item>
+        <item> 239 </item>
+        <item> 220 </item>
+        <item> 222 </item>
+        <item> 224 </item>
+        <item> 226 </item>
+        <item> 228 </item>
+        <item> 230 </item>
+        <item> 232 </item>
+        <item> 234 </item>
+        <item> 236 </item>
+        <item> 238 </item>
+        <item> 240 </item>
+
+        <item> 701 </item>
+        <item> 702 </item>
+        <item> 703 </item>
+        <item> 704 </item>
+        <item> 705 </item>
+        <item> 706 </item>
+        <item> 707 </item>
+        <item> 708 </item>
+        <item> 709 </item>
+        <item> 710 </item>
+        <item> 711 </item>
+        <item> 712 </item>
+        <item> 713 </item>
+        <item> 714 </item>
+        <item> 715 </item>
+        <item> 716 </item>
+        <item> 717 </item>
+        <item> 718 </item>
+        <item> 719 </item>
+        <item> 720 </item>
+        <item> 721 </item>
+        <item> 722 </item>
+        <item> 723 </item>
+        <item> 724 </item>
+        <item> 725 </item>
+        <item> 726 </item>
+        <item> 727 </item>
+        <item> 728 </item>
+        <item> 729 </item>
+        <item> 730 </item>
+        <item> 731 </item>
+        <item> 732 </item>
+        <item> 733 </item>
+        <item> 734 </item>
+        <item> 735 </item>
+        <item> 736 </item>
+        <item> 737 </item>
+        <item> 738 </item>
+        <item> 739 </item>
+        <item> 740 </item>
+        <item> 741 </item>
+        <item> 742 </item>
+        <item> 743 </item>
+        <item> 744 </item>
+        <item> 745 </item>
+        <item> 746 </item>
+        <item> 747 </item>
+        <item> 748 </item>
+        <item> 749 </item>
+        <item> 750 </item>
+        <item> 751 </item>
+        <item> 752 </item>
+        <item> 753 </item>
+        <item> 754 </item>
+        <item> 755 </item>
+        <item> 756 </item>
+        <item> 757 </item>
+        <item> 758 </item>
+        <item> 759 </item>
+        <item> 760 </item>
+        <item> 761 </item>
+        <item> 762 </item>
+        <item> 763 </item>
+        <item> 764 </item>
+        <item> 765 </item>
+        <item> 766 </item>
+        <item> 767 </item>
+        <item> 768 </item>
+        <item> 769 </item>
+        <item> 770 </item>
+        <item> 771 </item>
+        <item> 772 </item>
+        <item> 773 </item>
+        <item> 774 </item>
+        <item> 775 </item>
+        <item> 776 </item>
+
+        <item> 777 </item>
+        <item> 778 </item>
+
+        <item> 3107/3110 </item>
+        <item> 3108/3109 </item>
+
+        <item> Turag/1 </item>
+        <item> Turag/2 </item>
+        <item> Turag/3 </item>
+        <item> Turag/4 </item>
+        <item> Turag/5 </item>
+        <item> Turag/6 </item>
+        <item> Turag/7 </item>
+        <item> Turag/8 </item>
+
+
+    </string-array>
+
+
+    <string name="login1">Please give your user name.</string>
+    <string name="login2">Please give your password.</string>
+    <string name="login3">Invalid!</string>
+    <string name="required">Please insert a value.</string>
+    <string name="message">Please check your inbox.</string>
+
 
 </resources>
+

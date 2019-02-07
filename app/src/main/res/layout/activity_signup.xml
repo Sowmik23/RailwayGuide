@@ -1,83 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
+    android:background="@drawable/background"
     android:gravity="center"
     android:layout_gravity="center"
     android:orientation="vertical"
     tools:context=".SignupActivity">
 
-    <EditText
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:id="@+id/user_nameid"
-        android:hint="User name"
-        android:textSize="20sp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        />
+        android:layout_height="match_parent">
 
 
-    <EditText
-        android:id="@+id/mobile_numberid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Mobile number"
 
-        android:textSize="20sp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:inputType="number"
-        />
+        <EditText
+
+            android:paddingTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/user_nameid"
+            android:hint="User name"
+            android:textColorHint="#870c06"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
 
 
-    <EditText
-        android:id="@+id/email_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email"
-        android:textSize="20sp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:layout_marginBottom="5dp"
-        />
+        <EditText
+            android:textColorHint="#870c06"
+            android:id="@+id/mobile_numberid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile number"
 
-    <EditText
-        android:id="@+id/address_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Address"
-        android:textSize="20sp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:layout_marginBottom="5dp"
-        />
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:inputType="number"
+            />
 
-    <EditText
-        android:id="@+id/password_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:textSize="20sp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:layout_marginBottom="10dp"
-        />
 
-    <Button
-        android:id="@+id/sign_up_button_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign Up"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:textAllCaps="false"
-        />
+        <EditText
+            android:textColorHint="#870c06"
+            android:id="@+id/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            />
 
-</LinearLayout>
+        <EditText
+            android:textColorHint="#870c06"
+            android:id="@+id/address_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <EditText
+            android:textColorHint="#870c06"
+            android:id="@+id/password_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <!--<Button-->
+        <!--android:id="@+id/sign_up_button_id"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Sign Up"-->
+        <!--android:textSize="30sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textAllCaps="false"-->
+        <!--/>-->
+
+
+        <Button
+            android:layout_marginTop="40dp"
+            android:id="@+id/sign_up_button_id"
+            android:textAllCaps="false"
+
+            android:text="Sign Up"
+            android:textColor="#0A080A"
+            android:textSize="30sp"
+
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
