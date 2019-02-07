@@ -62,6 +62,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     }
 
+//    Hello I am Sowmik Sarker. I am from CSEDU 23 batch.
 
 
     public void startApp()
