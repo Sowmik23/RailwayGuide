@@ -2,10 +2,10 @@ This is our Application Development Lab Project, Railway Guide(Travelers Faithfu
 
 1.Group Members: 
 
-Hussain Md. Safwan (Roll: 42)
-Raihan Dewon Iman (Roll: 48)
-Sree Sowmik Kumar Sarker (Roll: 54)
-
+Sree Sowmik Kumar Sarker
+Hussain Md. Safwan 
+Raihan Dewon Iman 
+ 
 2.List of Features: 
 
     I) Users need to create an account (without internet connection).
