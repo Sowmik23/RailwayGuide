@@ -1,11 +1,5 @@
 This is our Application Development Lab Project, Railway Guide(Travelers Faithful Partner) . 
 
-1.Group Members: 
-
-Hussain Md. Safwan (Roll: 42)
-Raihan Dewon Iman (Roll: 48)
-Sree Sowmik Kumar Sarker (Roll: 54)
-
 2.List of Features: 
 
     I) Users need to create an account (without internet connection).
