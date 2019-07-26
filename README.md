@@ -1,12 +1,7 @@
-This is our Application Development Lab Project, Railway Guide(Travelers Faithful Partner) . 
+This is my Application Development Lab Project, Railway Guide(Travelers Faithful Partner) . 
 
-1.Group Members: 
 
-Sree Sowmik Kumar Sarker
-Hussain Md. Safwan 
-Raihan Dewon Iman 
- 
-2.List of Features: 
+#List of Features: 
 
     I) Users need to create an account (without internet connection).
     II) can search train from a station to another station & can see a list of train/s that runs through the route.
@@ -22,8 +17,8 @@ Raihan Dewon Iman
     XII) user also can give feedback about the app to the authorities.
     
     
-3. Screenshots:
+# Screenshots:
 
-4. Video : Here is the demo project video - also you can find here all of my projcet videos..
+# Video : Here is the demo project video - also you can find here all of my projcet videos..
 
- Link: https://www.youtube.com/watch?v=3JXZzrCd-PE&t=11s
+ #Link: https://www.youtube.com/watch?v=3JXZzrCd-PE&t=11s
